@@ -1,0 +1,82 @@
+'use client';
+
+import Link from 'next/link';
+import { useState } from 'react';
+
+export function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    return (
+        <div className="fixed top-0 left-0 right-0 z-50 bg-white/5 backdrop-blur-lg">
+            <div className="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
+
+                {/* Logo */}
+                <Link href="/" className="relative z-50">
+                    <img
+                        src="/logo.png"
+                        alt="Sanlabz Logo"
+                        className="h-12 w-auto object-contain"
+                        style={{ filter: 'brightness(0)' }}
+                    />
+                </Link>
+
+                {/* Desktop Navigation */}
+                <nav className="hidden lg:flex items-center gap-8">
+                    <Link href="/" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                        Home
+                    </Link>
+                    <Link href="/about" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                        About
+                    </Link>
+                    <Link href="/service" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                        Service
+                    </Link>
+
+                    {/* Dropdown Trigger - Simplified for now */}
+                    <div className="relative group cursor-pointer">
+                        <div className="flex items-center gap-1 text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                            Pages
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <Link href="/blog" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                        Blog
+                    </Link>
+                </nav>
+
+                {/* CTA Button */}
+                <div className="hidden lg:block">
+                    <Link href="/contact" className="bg-[#111] text-white px-6 py-2.5 rounded-full font-medium hover:opacity-90 transition-opacity">
+                        Contact us
+                    </Link>
+                </div>
+
+                {/* Mobile Menu Button */}
+                <button
+                    className="lg:hidden relative z-50 p-2 text-[#1a1a1a]"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    <div className="w-6 h-0.5 bg-current mb-1.5"></div>
+                    <div className="w-6 h-0.5 bg-current mb-1.5"></div>
+                    <div className="w-6 h-0.5 bg-current"></div>
+                </button>
+
+                {/* Mobile Menu Overlay */}
+                {isMenuOpen && (
+                    <div className="fixed inset-0 bg-[#FDFBF9] z-40 flex flex-col items-center justify-center space-y-8 lg:hidden">
+                        <Link href="/" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>Home</Link>
+                        <Link href="/about" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>About</Link>
+                        <Link href="/service" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>Service</Link>
+                        <Link href="/blog" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+                        <Link href="/contact" className="bg-[#111] text-white px-8 py-3 rounded-full font-medium" onClick={() => setIsMenuOpen(false)}>
+                            Contact us
+                        </Link>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+}
