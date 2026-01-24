@@ -32,15 +32,7 @@ export function Navbar() {
                         Service
                     </Link>
 
-                    {/* Dropdown Trigger - Simplified for now */}
-                    <div className="relative group cursor-pointer">
-                        <div className="flex items-center gap-1 text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
-                            Pages
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </div>
-                    </div>
+
 
                     <Link href="/blog" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
                         Blog
