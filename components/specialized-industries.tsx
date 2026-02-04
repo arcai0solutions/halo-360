@@ -77,7 +77,7 @@ export function SpecializedIndustries() {
                                 Specialized Industries
                             </h2>
                             <p className="text-gray-600 max-w-xl text-base lg:text-lg leading-relaxed">
-                                At Sanlabz, we bring our expertise to a variety of industries, offering tailored digital solutions that drive efficiency, innovation, and growth.
+                                At Halo, we bring our expertise to a variety of industries, offering tailored digital solutions that drive efficiency, innovation, and growth.
                             </p>
                         </div>
                     </motion.div>

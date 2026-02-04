@@ -37,7 +37,7 @@ export function Footer() {
 
                         <div className="space-y-6">
                             <div>
-                                <h3 className="text-2xl font-bold mb-2">Sanlabz</h3>
+                                <h3 className="text-2xl font-bold mb-2">Halo</h3>
                                 <p className="text-gray-400">Save time. Get Started Now.</p>
                                 <p className="text-gray-500 text-sm">Unleash the most advanced Agency and boost your productivity</p>
                             </div>
@@ -75,7 +75,7 @@ export function Footer() {
                                     <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
                                     <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About us</Link></li>
                                     <li><Link href="/service" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
-                                    <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+                                    <li><Link href="/projects" className="text-gray-400 hover:text-white transition-colors">Projects</Link></li>
                                     <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
                                 </ul>
                             </div>
@@ -96,7 +96,7 @@ export function Footer() {
 
                 {/* Footer Bottom */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-                    <p>All Rights Reserved. Designed by <span className="text-white">Sanlabz</span></p>
+                    <p>All Rights Reserved. Designed by <a href="https://www.arcai.agency" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">ARC AI</a></p>
                     <p className="hidden md:block">|</p>
                     <p>Powered by <span className="text-white">Next.js</span></p>
                 </div>

@@ -8,59 +8,51 @@ import { ArrowRight } from 'lucide-react';
 const services = [
     {
         number: '01',
-        title: 'Custom Software Development',
-        description: 'Our custom software development services are designed to meet the unique needs of your business. We work closely with you to understand your requirements and deliver solutions that drive growth and efficiency.',
-        tags: ['Scalability', 'Flexibility', 'Integration', 'Java', '.NET', 'Python'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa96cc0fae4eeb5af1083_Develop%20Thumb.avif',
-        href: '/services/software-development'
+        title: 'SOCIAL MEDIA MARKETING',
+        description: 'Drive leads & sales with engaging content. We create strategies that resonate with your audience and boost your online presence.',
+        tags: ['Content Strategy', 'Community Management', 'Analytics', 'Growth'],
+        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa93f595699301bf01ee3_Branding%20Thumb.avif',
+        href: '/services/social-media'
     },
     {
         number: '02',
-        title: 'Web Application Development',
-        description: 'We create robust and scalable web applications that enhance user experience and drive business success.',
-        tags: ['Angular', 'React', 'Node.js', 'E-commerce platforms', 'CRM systems'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa9ad34ace088fafd1083_UX%20Thumb.avif', // Reusing relevant thumb
+        title: 'WEB DEVELOPMENT & MANAGEMENT',
+        description: 'Fast, secure & user-friendly websites. We build scalable solutions that enhance user experience and drive business success.',
+        tags: ['Frontend', 'Backend', 'CMS', 'Maintenance', 'Security'],
+        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa96cc0fae4eeb5af1083_Develop%20Thumb.avif',
         href: '/services/web-development'
     },
     {
         number: '03',
-        title: 'Mobile Application Development',
-        description: 'Our mobile app development services cover iOS and Android platforms, providing seamless user experiences and cutting-edge functionalities.',
-        tags: ['Swift', 'Kotlin', 'Flutter', 'Social media apps', 'Financial apps'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa93f595699301bf01ee3_Branding%20Thumb.avif', // Reusing relevant thumb
-        href: '/services/mobile-development'
+        title: 'VIDEO & REELS',
+        description: 'Product shoots, reels & cinematic edits. We bring your brand to life with high-quality video content that captures attention.',
+        tags: ['Videography', 'Editing', 'Social Reels', 'Product Shoots'],
+        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa910c67b5698ad6142e0_Motion%20Thumb.avif',
+        href: '/services/video-reels'
     },
     {
         number: '04',
-        title: 'Product Design',
-        description: 'Our design team focuses on creating user-centric designs that are both visually appealing and functional.',
-        tags: ['UI/UX Design', 'Prototyping', 'User Testing', 'Mobile app interfaces'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa9ad34ace088fafd1083_UX%20Thumb.avif',
-        href: '/services/product-design'
+        title: 'BRANDING & DESIGN',
+        description: 'Unique logos, profiles & standout visuals. We craft distinctive brand identities that make a lasting impression.',
+        tags: ['Logo Design', 'Brand Identity', 'Visuals', 'Graphic Design'],
+        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa93f595699301bf01ee3_Branding%20Thumb.avif',
+        href: '/services/branding'
     },
     {
         number: '05',
-        title: 'Quality Assurance',
-        description: 'We offer comprehensive testing services to ensure your software is reliable, secure, and performs well under all conditions.',
-        tags: ['Automated Testing', 'Manual Testing', 'Performance Testing', 'Selenium', 'JIRA'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa910c67b5698ad6142e0_Motion%20Thumb.avif',
-        href: '/services/qa'
+        title: 'PRINT DESIGN',
+        description: 'Flyers, brochures, menus & more. We provide high-quality print designs that effectively communicate your message offline.',
+        tags: ['Flyers', 'Brochures', 'Menus', 'Packaging'],
+        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa9ad34ace088fafd1083_UX%20Thumb.avif',
+        href: '/services/print-design'
     },
     {
         number: '06',
-        title: 'DevOps & Cloud Services',
-        description: 'Our DevOps and cloud services help you achieve continuous delivery and scalability.',
-        tags: ['Cloud Architecture', 'CI/CD', 'Infrastructure Management', 'AWS', 'Azure'],
+        title: 'DIGITAL CAMPAIGNS',
+        description: 'Integrated multi-platform strategies. We design cohesive campaigns that reach your target audience across various digital channels.',
+        tags: ['Strategy', 'Multi-platform', 'Ads', 'Conversion'],
         image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa96cc0fae4eeb5af1083_Develop%20Thumb.avif',
-        href: '/services/devops'
-    },
-    {
-        number: '07',
-        title: 'Consulting Services',
-        description: 'Our consulting services help you navigate the complexities of IT strategy, business analysis, and project management.',
-        tags: ['IT Strategy Consulting', 'Business Analysis', 'Project Management'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa93f595699301bf01ee3_Branding%20Thumb.avif',
-        href: '/services/consulting'
+        href: '/services/digital-campaigns'
     }
 ];
 

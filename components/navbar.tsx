@@ -7,16 +7,15 @@ export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 bg-white/5 backdrop-blur-lg">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
             <div className="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
 
                 {/* Logo */}
                 <Link href="/" className="relative z-50">
                     <img
-                        src="/logo.png"
-                        alt="Sanlabz Logo"
+                        src="/new-logo.jpeg"
+                        alt="Halo Logo"
                         className="h-12 w-auto object-contain"
-                        style={{ filter: 'brightness(0)' }}
                     />
                 </Link>
 
@@ -34,8 +33,8 @@ export function Navbar() {
 
 
 
-                    <Link href="/blog" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
-                        Blog
+                    <Link href="/projects" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                        Projects
                     </Link>
                 </nav>
 

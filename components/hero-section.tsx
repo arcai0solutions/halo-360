@@ -111,13 +111,9 @@ export function HeroSection() {
 
           {/* CTA & Reviews */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
-            <Link href="/contact" className="group">
-              <div className="bg-[#111] text-white px-8 py-5 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-[1.02] shadow-xl">
-                <span className="text-[17px] font-medium">Let&apos;s Work Together ?</span>
-              </div>
-            </Link>
-
-
+            <h2 className="font-[family-name:var(--font-ittenoviana)] text-3xl sm:text-4xl text-red-600 whitespace-nowrap">
+              Illuminate. Influence. Impact.
+            </h2>
           </div>
         </div>
 

@@ -47,10 +47,10 @@ export function AboutSection() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#1a1a1a] leading-tight max-w-5xl">
-                            At Sanlabz, we are more than just a software development company…
+                            At Halo 360, we blend creativity, strategy, and insights to help businesses thrive in the digital world.
                         </h2>
                         <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-balance">
-                            We are your dedicated digital partner. Our mission is to understand your unique challenges and goals, working closely with you to craft tailored solutions that drive innovation and success. With a deep commitment to excellence and collaboration, we transform your vision into reality, ensuring that every project not only meets but exceeds expectations. Together, we build the digital future of your business.
+                            Our mission is to craft campaigns that connect with audiences, drive results, and bring brand stories to life. From social media strategies to full-scale digital campaigns, we deliver tailored solutions aligned with your goals. Partner with Halo 360 and unlock marketing without limits.
                         </p>
                     </motion.div>
 

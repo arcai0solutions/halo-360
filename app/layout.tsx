@@ -1,41 +1,46 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 
 const inter = Inter({ subsets: ['latin'] });
+const ittenoviana = localFont({
+  src: '../public/ITTENOVIANADEMO-Regular.otf',
+  variable: '--font-ittenoviana',
+});
 
 export const metadata: Metadata = {
   title: {
-    default: 'Sanlabz | Strategic Digital Partner',
-    template: '%s | Sanlabz'
+    default: 'Halo | Strategic Digital Partner',
+    template: '%s | Halo'
   },
-  description: 'Sanlabz is your dedicated digital partner. We specialize in custom software development, web & mobile apps, product design, and digital strategy to drive innovation.',
-  keywords: ['Sanlabz', 'Digital Agency', 'Software Development', 'Web Development', 'Mobile Apps', 'Product Design', 'UI/UX', 'Digital Strategy', 'Business Growth'],
-  authors: [{ name: 'Sanlabz' }],
-  creator: 'Sanlabz',
+  description: 'Halo is your dedicated digital partner. We specialize in custom software development, web & mobile apps, product design, and digital strategy to drive innovation.',
+  keywords: ['Halo', 'Digital Agency', 'Software Development', 'Web Development', 'Mobile Apps', 'Product Design', 'UI/UX', 'Digital Strategy', 'Business Growth'],
+  authors: [{ name: 'Halo' }],
+  creator: 'Halo',
   metadataBase: new URL('https://sanlabz.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://sanlabz.com',
-    title: 'Sanlabz | Strategic Digital Partner',
+    title: 'Halo | Strategic Digital Partner',
     description: 'We transform your vision into reality with custom software solutions and world-class design.',
-    siteName: 'Sanlabz',
+    siteName: 'Halo',
     images: [
       {
         url: '/og-image.png', // Assuming a default OG image path or reusing a known one
         width: 1200,
         height: 630,
-        alt: 'Sanlabz - Strategic Digital Partner',
+        alt: 'Halo - Strategic Digital Partner',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sanlabz | Strategic Digital Partner',
+    title: 'Halo | Strategic Digital Partner',
     description: 'We transform your vision into reality with custom software solutions and world-class design.',
     images: ['/og-image.png'],
-    creator: '@sanlabz', // Placeholder handle
+    creator: '@halo', // Placeholder handle
   },
   robots: {
     index: true,
@@ -62,7 +67,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${ittenoviana.variable}`}>{children}</body>
     </html>
   );
 }
