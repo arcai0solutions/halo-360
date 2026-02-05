@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const industries = [
     {
@@ -117,10 +118,12 @@ export function SpecializedIndustries() {
                                         }}
                                         transition={{ duration: 0.7, ease: "easeOut" }}
                                     >
-                                        <img
+                                        <Image
                                             src={industry.image}
                                             alt={industry.title}
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            className="object-cover"
+                                            sizes="50vw"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                                     </motion.div>

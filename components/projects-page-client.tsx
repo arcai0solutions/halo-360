@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export function ProjectsPageClient() {
     const fadeInUp = {
@@ -66,11 +67,13 @@ export function ProjectsPageClient() {
                             }}
                             className="group block"
                         >
-                            <div className="relative overflow-hidden rounded-2xl mb-6 bg-gray-100">
-                                <img 
+                            <div className="relative overflow-hidden rounded-2xl mb-6 bg-gray-100 aspect-[4/3]">
+                                <Image 
                                     src={project.image} 
                                     alt={project.title} 
-                                    className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
+                                    fill
+                                    className="object-cover transform transition-transform duration-700 group-hover:scale-105"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
                             </div>

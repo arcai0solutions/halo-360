@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const row1 = [
     { name: 'Angular', src: 'https://sanlabz.com/wp-content/uploads/2024/08/angular_wordmark_gradient-800x250.png' },
@@ -58,10 +59,12 @@ export function TechMarquee() {
 function LogoItem({ logo }: { logo: { name: string; src: string } }) {
     return (
         <div className="relative w-32 h-16 md:w-40 md:h-20 flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-            <img
+            <Image
                 src={logo.src}
                 alt={logo.name}
-                className="w-full h-full object-contain"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 128px, 160px"
             />
         </div>
     );

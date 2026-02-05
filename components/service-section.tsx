@@ -4,6 +4,7 @@ import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const services = [
     {
@@ -126,10 +127,12 @@ function ServiceItem({ service, index }: { service: any, index: number }) {
             {/* Center Column: Image */}
             <div className="lg:col-span-4 flex justify-center order-1 lg:order-2 perspective-1000">
                 <div className="relative w-full aspect-square max-w-[400px] transition-transform duration-700 ease-out transform group-hover:rotate-6 group-hover:scale-105 rotate-0 lg:rotate-[15deg] overflow-hidden rounded-md shadow-2xl">
-                    <img
+                    <Image
                         src={service.image}
                         alt={service.title}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 400px"
                     />
                 </div>
             </div>

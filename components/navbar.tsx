@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export function Navbar() {
@@ -26,9 +27,12 @@ export function Navbar() {
 
                 {/* Logo */}
                 <Link href="/" className="relative z-50">
-                    <img
+                    <Image
                         src="/new-logo.jpeg"
                         alt="Halo Logo"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
                         className="h-12 w-auto object-contain"
                     />
                 </Link>
@@ -63,6 +67,7 @@ export function Navbar() {
                 <button
                     className="lg:hidden relative z-50 p-2 text-[#1a1a1a]"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Toggle menu"
                 >
                     <div className="w-6 h-0.5 bg-current mb-1.5"></div>
                     <div className="w-6 h-0.5 bg-current mb-1.5"></div>

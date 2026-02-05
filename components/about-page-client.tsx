@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Lightbulb, Palette, Briefcase, Clock, Users } from 'lucide-react';
+import Image from 'next/image';
 
 export function AboutPageClient() {
   const fadeInUp = {
@@ -70,7 +71,14 @@ export function AboutPageClient() {
                 variants={fadeInUp}
                 className="relative rounded-3xl overflow-hidden"
              >
-                 <img src="/halo-about.jpeg" alt="About Halo" className="w-full h-auto" />
+                 <Image
+                    src="/halo-about.jpeg"
+                    alt="About Halo"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-auto"
+                 />
              </motion.div>
 
              <motion.div

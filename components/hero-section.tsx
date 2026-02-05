@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 // Icon Components
 const UiuxIcon = () => (
@@ -73,10 +74,13 @@ export function HeroSection() {
 
       {/* 3D Abstract Background */}
       <div className="absolute -right-[20%] top-[60%] -translate-y-1/2 h-[100%] w-[65%] pointer-events-none z-0">
-        <img
+        <Image
           src="/6860afbc21b70f57410cb115_bf8c2b6ca2de36bd04ec0497a327b8b7_Watermark.avif"
           alt="Background Abstract"
-          className="w-full h-full object-contain rotate-45"
+          fill
+          priority
+          className="object-contain rotate-45"
+          sizes="65vw"
         />
       </div>
 
@@ -86,9 +90,11 @@ export function HeroSection() {
         <div className={`space-y-6 lg:space-y-10 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} text-center lg:text-left`}>
           {/* Subtitle Badge - Hidden but preserves layout */}
           <div className="hidden lg:inline-flex items-center gap-2 bg-[#2d2d2d] text-white px-5 py-2.5 rounded-full shadow-lg invisible">
-            <img
+            <Image
               src="https://cdn.prod.website-files.com/68542aee5c18c90474d64a51/6858a8279bf2d43807e086e1_19b4f020246cdf058ea8fc201a57ea3c_Home%20Hero%20%20Subtitle%20Dot.svg"
               alt=""
+              width={8}
+              height={8}
               className="w-2 h-2"
             />
             <span className="text-sm font-medium tracking-wide">Creative Agency</span>
