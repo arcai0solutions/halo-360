@@ -61,7 +61,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-[#FDFBF9] overflow-hidden pt-32 pb-20 px-6 lg:px-12">
+    <section className="relative min-h-screen bg-[#FDFBF9] overflow-hidden pt-28 lg:pt-32 pb-20 px-6 lg:px-12 flex flex-col justify-start lg:justify-center">
       {/* Background Grid */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -83,9 +83,9 @@ export function HeroSection() {
       <div className="w-full max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
 
         {/* Left Block */}
-        <div className={`space-y-8 lg:space-y-10 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <div className={`space-y-6 lg:space-y-10 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} text-center lg:text-left`}>
           {/* Subtitle Badge - Hidden but preserves layout */}
-          <div className="inline-flex items-center gap-2 bg-[#2d2d2d] text-white px-5 py-2.5 rounded-full shadow-lg invisible">
+          <div className="hidden lg:inline-flex items-center gap-2 bg-[#2d2d2d] text-white px-5 py-2.5 rounded-full shadow-lg invisible">
             <img
               src="https://cdn.prod.website-files.com/68542aee5c18c90474d64a51/6858a8279bf2d43807e086e1_19b4f020246cdf058ea8fc201a57ea3c_Home%20Hero%20%20Subtitle%20Dot.svg"
               alt=""
@@ -97,74 +97,75 @@ export function HeroSection() {
 
 
           {/* Title */}
-          <h1 className="text-6xl lg:text-[5.5rem] leading-[1.05] font-semibold text-[#1a1a1a] tracking-tight">
-            Strategic Digital <br /> Partner
+          <h1 className="text-4xl sm:text-5xl lg:text-[5.5rem] leading-[1.1] lg:leading-[1.05] font-semibold text-[#1a1a1a] tracking-tight">
+            Strategic Digital <br className="hidden sm:block" /> Partner
           </h1>
 
           {/* Description */}
-          <div className="max-w-xl">
-            <p className="text-lg text-gray-500 leading-relaxed">
+          <div className="max-w-xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg text-gray-500 leading-relaxed">
               We blend creativity, strategy, and insights to help businesses thrive in the digital world.
             </p>
           </div>
 
           {/* CTA & Reviews */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
-            <h2 className="font-[family-name:var(--font-ittenoviana)] text-3xl sm:text-4xl text-red-600 whitespace-nowrap">
+          <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-8 w-full">
+            <h2 className="font-[family-name:var(--font-ittenoviana)] text-2xl sm:text-3xl lg:text-4xl text-red-600 whitespace-normal sm:whitespace-nowrap text-center leading-tight">
               Illuminate. Influence. Impact.
             </h2>
           </div>
         </div>
 
         {/* Right Block - Glass Cards */}
-        <div className={`relative h-full flex flex-col items-end justify-center space-y-6 lg:pl-10 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+        <div className={`relative h-full w-full lg:w-auto grid grid-cols-2 gap-3 lg:flex lg:flex-col items-center lg:items-end justify-center lg:space-y-6 lg:pl-10 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'} mt-8 lg:mt-0`}>
           <div className="absolute inset-0 -z-10 bg-gradient-to-l from-orange-100/50 to-transparent rounded-full blur-3xl scale-125 translate-x-1/4" />
 
           {/* UI/UX Design Card */}
-          <div className="relative group w-full max-w-[320px] lg:mr-24 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full lg:max-w-[320px] lg:mr-24 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-300/40 to-orange-300/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
-            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
-              <span className="text-[#1a1a1a] font-medium text-lg pl-4">UIUX Design</span>
-              <div className="w-12 h-12 flex items-center justify-center text-[#1a1a1a]">
+            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-3 sm:p-5 rounded-[2rem] flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2 sm:gap-0 shadow-sm hover:shadow-md transition-all h-full sm:h-auto">
+              <span className="text-[#1a1a1a] font-medium text-sm sm:text-lg pl-0 sm:pl-4 text-center sm:text-left order-2 sm:order-1">UIUX Design</span>
+              <div className="w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center text-[#1a1a1a] order-1 sm:order-2">
                 <UiuxIcon />
               </div>
             </div>
           </div>
 
           {/* Marketing Card */}
-          <div className="relative group w-full max-w-[340px] lg:mr-8 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full lg:max-w-[340px] lg:mr-8 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-red-300/40 to-pink-300/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
-            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
-              <span className="text-[#1a1a1a] font-medium text-lg pl-4">Marketing</span>
-              <div className="w-12 h-12 flex items-center justify-center text-[#1a1a1a]">
+            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-3 sm:p-5 rounded-[2rem] flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2 sm:gap-0 shadow-sm hover:shadow-md transition-all h-full sm:h-auto">
+              <span className="text-[#1a1a1a] font-medium text-sm sm:text-lg pl-0 sm:pl-4 text-center sm:text-left order-2 sm:order-1">Marketing</span>
+              <div className="w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center text-[#1a1a1a] order-1 sm:order-2">
                 <MarketingIcon />
               </div>
             </div>
           </div>
 
           {/* Development Card */}
-          <div className="relative group w-full max-w-[360px] lg:mr-0 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full lg:max-w-[360px] lg:mr-0 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-orange-400/40 to-red-400/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
-            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
-              <span className="text-[#1a1a1a] font-medium text-lg pl-4">Development</span>
-              <div className="w-12 h-12 flex items-center justify-center text-[#1a1a1a]">
+            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-3 sm:p-5 rounded-[2rem] flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2 sm:gap-0 shadow-sm hover:shadow-md transition-all h-full sm:h-auto">
+              <span className="text-[#1a1a1a] font-medium text-sm sm:text-lg pl-0 sm:pl-4 text-center sm:text-left order-2 sm:order-1">Development</span>
+              <div className="w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center text-[#1a1a1a] order-1 sm:order-2">
                 <DevelopmentIcon />
               </div>
             </div>
           </div>
 
           {/* Branding Card */}
-          <div className="relative group w-full max-w-[340px] lg:mr-10 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full lg:max-w-[340px] lg:mr-10 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-pink-300/40 to-orange-300/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
-            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
-              <span className="text-[#1a1a1a] font-medium text-lg pl-4">Branding</span>
-              <div className="w-12 h-12 flex items-center justify-center text-[#1a1a1a]">
+            <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-3 sm:p-5 rounded-[2rem] flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2 sm:gap-0 shadow-sm hover:shadow-md transition-all h-full sm:h-auto">
+              <span className="text-[#1a1a1a] font-medium text-sm sm:text-lg pl-0 sm:pl-4 text-center sm:text-left order-2 sm:order-1">Branding</span>
+              <div className="w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center text-[#1a1a1a] order-1 sm:order-2">
                 <BrandingIcon />
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       {/* Scroll Down Button */}
 
