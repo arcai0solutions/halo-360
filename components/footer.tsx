@@ -102,7 +102,7 @@ export function Footer() {
 
                 {/* Footer Bottom */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-                    <p>All Rights Reserved. Designed by <a href="https://www.arcai.agency" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">ARC AI</a></p>
+                    <p className="flex items-center gap-2">All Rights Reserved. Designed by <a href="https://www.arcai.agency" target="_blank" rel="noopener noreferrer"><img src="/arc logo.png" alt="ARC AI" className="h-10 w-auto" /></a></p>
                     <p className="hidden md:block">|</p>
                     <p>Powered by <span className="text-white">Next.js</span></p>
                 </div>
