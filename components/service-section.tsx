@@ -11,7 +11,7 @@ const services = [
         title: 'SOCIAL MEDIA MARKETING',
         description: 'Drive leads & sales with engaging content. We create strategies that resonate with your audience and boost your online presence.',
         tags: ['Content Strategy', 'Community Management', 'Analytics', 'Growth'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa93f595699301bf01ee3_Branding%20Thumb.avif',
+        image: '/social.jpeg',
         href: '/services/social-media'
     },
     {
@@ -19,7 +19,7 @@ const services = [
         title: 'WEB DEVELOPMENT & MANAGEMENT',
         description: 'Fast, secure & user-friendly websites. We build scalable solutions that enhance user experience and drive business success.',
         tags: ['Frontend', 'Backend', 'CMS', 'Maintenance', 'Security'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa96cc0fae4eeb5af1083_Develop%20Thumb.avif',
+        image: '/web.jpeg',
         href: '/services/web-development'
     },
     {
@@ -27,7 +27,7 @@ const services = [
         title: 'VIDEO & REELS',
         description: 'Product shoots, reels & cinematic edits. We bring your brand to life with high-quality video content that captures attention.',
         tags: ['Videography', 'Editing', 'Social Reels', 'Product Shoots'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa910c67b5698ad6142e0_Motion%20Thumb.avif',
+        image: '/video.jpeg',
         href: '/services/video-reels'
     },
     {
@@ -35,7 +35,7 @@ const services = [
         title: 'BRANDING & DESIGN',
         description: 'Unique logos, profiles & standout visuals. We craft distinctive brand identities that make a lasting impression.',
         tags: ['Logo Design', 'Brand Identity', 'Visuals', 'Graphic Design'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa93f595699301bf01ee3_Branding%20Thumb.avif',
+        image: '/Branding.jpeg',
         href: '/services/branding'
     },
     {
@@ -43,7 +43,7 @@ const services = [
         title: 'PRINT DESIGN',
         description: 'Flyers, brochures, menus & more. We provide high-quality print designs that effectively communicate your message offline.',
         tags: ['Flyers', 'Brochures', 'Menus', 'Packaging'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa9ad34ace088fafd1083_UX%20Thumb.avif',
+        image: '/PRINT DESIGN.jpeg',
         href: '/services/print-design'
     },
     {
@@ -51,7 +51,7 @@ const services = [
         title: 'DIGITAL CAMPAIGNS',
         description: 'Integrated multi-platform strategies. We design cohesive campaigns that reach your target audience across various digital channels.',
         tags: ['Strategy', 'Multi-platform', 'Ads', 'Conversion'],
-        image: 'https://cdn.prod.website-files.com/6858b3e20ac6c1c654647bd5/685aa96cc0fae4eeb5af1083_Develop%20Thumb.avif',
+        image: '/DIGITAL CAMPAIGNS.jpeg',
         href: '/services/digital-campaigns'
     }
 ];
@@ -145,7 +145,7 @@ function ServiceItem({ service, index }: { service: any, index: number }) {
                 </div>
 
                 <div className="pt-4">
-                    <Link href={service.href}>
+                    <Link href="/projects">
                         <Button
                             variant="outline"
                             className="h-12 px-8 rounded-full border border-gray-200 text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors group/btn"

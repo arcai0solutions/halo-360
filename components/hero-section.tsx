@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 
 // Icon Components
 const UiuxIcon = () => (
@@ -105,7 +104,7 @@ export function HeroSection() {
           {/* Description */}
           <div className="max-w-xl">
             <p className="text-lg text-gray-500 leading-relaxed">
-              We specialize in delivering custom software solutions to help businesses achieve their digital transformation goals.
+              We blend creativity, strategy, and insights to help businesses thrive in the digital world.
             </p>
           </div>
 
@@ -122,7 +121,7 @@ export function HeroSection() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-l from-orange-100/50 to-transparent rounded-full blur-3xl scale-125 translate-x-1/4" />
 
           {/* UI/UX Design Card */}
-          <Link href="/services/ui-ux" className="relative group w-full max-w-[320px] lg:mr-24 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full max-w-[320px] lg:mr-24 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-300/40 to-orange-300/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
             <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
               <span className="text-[#1a1a1a] font-medium text-lg pl-4">UIUX Design</span>
@@ -130,10 +129,10 @@ export function HeroSection() {
                 <UiuxIcon />
               </div>
             </div>
-          </Link>
+          </div>
 
           {/* Marketing Card */}
-          <Link href="/services/marketing" className="relative group w-full max-w-[340px] lg:mr-8 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full max-w-[340px] lg:mr-8 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-red-300/40 to-pink-300/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
             <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
               <span className="text-[#1a1a1a] font-medium text-lg pl-4">Marketing</span>
@@ -141,10 +140,10 @@ export function HeroSection() {
                 <MarketingIcon />
               </div>
             </div>
-          </Link>
+          </div>
 
           {/* Development Card */}
-          <Link href="/services/develop" className="relative group w-full max-w-[360px] lg:mr-0 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full max-w-[360px] lg:mr-0 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-orange-400/40 to-red-400/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
             <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
               <span className="text-[#1a1a1a] font-medium text-lg pl-4">Development</span>
@@ -152,10 +151,10 @@ export function HeroSection() {
                 <DevelopmentIcon />
               </div>
             </div>
-          </Link>
+          </div>
 
           {/* Branding Card */}
-          <Link href="/services/branding" className="relative group w-full max-w-[340px] lg:mr-10 transform hover:-translate-x-2 transition-transform duration-300">
+          <div className="relative group w-full max-w-[340px] lg:mr-10 transform hover:-translate-x-2 transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-pink-300/40 to-orange-300/40 rounded-[2rem] blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
             <div className="relative bg-white/10 backdrop-blur-xl border border-white/40 p-5 rounded-[2rem] flex items-center justify-between shadow-sm hover:shadow-md transition-all">
               <span className="text-[#1a1a1a] font-medium text-lg pl-4">Branding</span>
@@ -163,7 +162,7 @@ export function HeroSection() {
                 <BrandingIcon />
               </div>
             </div>
-          </Link>
+          </div>
         </div>
       </div>
 

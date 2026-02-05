@@ -1,13 +1,27 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+        <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-sm' : 'bg-transparent'}`}>
             <div className="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
 
                 {/* Logo */}
@@ -21,19 +35,19 @@ export function Navbar() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center gap-8">
-                    <Link href="/" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                    <Link href="/" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors hover:underline underline-offset-4">
                         Home
                     </Link>
-                    <Link href="/about" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                    <Link href="/about" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors hover:underline underline-offset-4">
                         About
                     </Link>
-                    <Link href="/service" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                    <Link href="/service" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors hover:underline underline-offset-4">
                         Service
                     </Link>
 
 
 
-                    <Link href="/projects" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors">
+                    <Link href="/projects" className="text-[#1a1a1a] font-medium hover:text-gray-600 transition-colors hover:underline underline-offset-4">
                         Projects
                     </Link>
                 </nav>
@@ -61,7 +75,7 @@ export function Navbar() {
                         <Link href="/" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>Home</Link>
                         <Link href="/about" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>About</Link>
                         <Link href="/service" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>Service</Link>
-                        <Link href="/blog" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+                        <Link href="/projects" className="text-2xl font-medium" onClick={() => setIsMenuOpen(false)}>Projects</Link>
                         <Link href="/contact" className="bg-[#111] text-white px-8 py-3 rounded-full font-medium" onClick={() => setIsMenuOpen(false)}>
                             Contact us
                         </Link>
