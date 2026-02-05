@@ -18,17 +18,20 @@ export const metadata: Metadata = {
   keywords: ['Halo', 'Digital Agency', 'Software Development', 'Web Development', 'Mobile Apps', 'Product Design', 'UI/UX', 'Digital Strategy', 'Business Growth'],
   authors: [{ name: 'Halo' }],
   creator: 'Halo',
-  metadataBase: new URL('https://sanlabz.com'),
+  metadataBase: new URL('https://halo360.online'),
+  icons: {
+    icon: '/halo-favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://sanlabz.com',
+    url: 'https://halo360.online',
     title: 'Halo | Strategic Digital Partner',
     description: 'We transform your vision into reality with custom software solutions and world-class design.',
     siteName: 'Halo',
     images: [
       {
-        url: '/og-image.png', // Assuming a default OG image path or reusing a known one
+        url: '/halo-shareable.jpeg',
         width: 1200,
         height: 630,
         alt: 'Halo - Strategic Digital Partner',
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Halo | Strategic Digital Partner',
     description: 'We transform your vision into reality with custom software solutions and world-class design.',
-    images: ['/og-image.png'],
+    images: ['/halo-shareable.jpeg'],
     creator: '@halo', // Placeholder handle
   },
   robots: {
@@ -53,12 +56,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
-  },
 };
+
+import { Preloader } from '@/components/preloader';
 
 export default function RootLayout({
   children,
@@ -67,7 +67,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${ittenoviana.variable}`}>{children}</body>
+      <body className={`${inter.className} ${ittenoviana.variable}`}>
+        <Preloader />
+        {children}
+      </body>
     </html>
   );
 }
