@@ -3,7 +3,6 @@
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 export function AboutSection() {
     const fadeInUp: Variants = {
@@ -53,54 +52,6 @@ export function AboutSection() {
                         <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-balance">
                             Our mission is to craft campaigns that connect with audiences, drive results, and bring brand stories to life. From social media strategies to full-scale digital campaigns, we deliver tailored solutions aligned with your goals. Partner with Halo 360 and unlock marketing without limits.
                         </p>
-                    </motion.div>
-
-                    {/* Reviews/Stats Block */}
-                    <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl pt-8">
-                        {/* Stat 1 */}
-                        <div className="flex flex-col items-center text-center space-y-3 p-4">
-                            <div className="w-12 h-12 mb-2 flex items-center justify-center relative">
-                                <Image
-                                    src="https://cdn.prod.website-files.com/68542aee5c18c90474d64a51/685ab0d0ede52c6b4d639d65_Star.svg"
-                                    alt="Star"
-                                    fill
-                                    className="object-contain"
-                                    sizes="48px"
-                                />
-                            </div>
-                            <h3 className="text-4xl font-bold text-[#1a1a1a]">4.9</h3>
-                            <p className="text-gray-600 text-lg leading-relaxed">Our high rating proves quality and positive user impact.</p>
-                        </div>
-
-                        {/* Stat 2 */}
-                        <div className="flex flex-col items-center text-center space-y-3 p-4">
-                            <div className="w-12 h-12 mb-2 flex items-center justify-center relative">
-                                <Image
-                                    src="https://cdn.prod.website-files.com/68542aee5c18c90474d64a51/685ab0d194914b645c67e9b7_Avatar.svg"
-                                    alt="Users"
-                                    fill
-                                    className="object-contain"
-                                    sizes="48px"
-                                />
-                            </div>
-                            <h3 className="text-4xl font-bold text-[#1a1a1a]">15M</h3>
-                            <p className="text-gray-600 text-lg leading-relaxed">Our platform is a trusted choice for Wide User.</p>
-                        </div>
-
-                        {/* Stat 3 */}
-                        <div className="flex flex-col items-center text-center space-y-3 p-4">
-                            <div className="w-12 h-12 mb-2 flex items-center justify-center relative">
-                                <Image
-                                    src="https://cdn.prod.website-files.com/68542aee5c18c90474d64a51/685ab0d03e29cc442b69bcc5_Goal.svg"
-                                    alt="Goal"
-                                    fill
-                                    className="object-contain"
-                                    sizes="48px"
-                                />
-                            </div>
-                            <h3 className="text-4xl font-bold text-[#1a1a1a]">92+</h3>
-                            <p className="text-gray-600 text-lg leading-relaxed">Our global presence reliable, efficient solutions.</p>
-                        </div>
                     </motion.div>
 
                     {/* Button Block */}
