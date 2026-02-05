@@ -97,7 +97,7 @@ export function HeroSection() {
 
 
           {/* Title */}
-          <h1 className="text-5xl sm:text-6xl lg:text-[6rem] leading-[1.1] lg:leading-[1.05] font-semibold text-[#1a1a1a] tracking-tight">
+          <h1 className="text-5xl sm:text-5xl lg:text-[5.5rem] leading-[1.1] lg:leading-[1.05] font-semibold text-[#1a1a1a] tracking-tight">
             Strategic Digital <br className="hidden sm:block" /> Partner
           </h1>
 

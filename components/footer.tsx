@@ -23,14 +23,20 @@ export function Footer() {
                                 Project in your <br />
                                 mind
                             </h2>
-                            <div className="inline-block">
-                                <div className="p-[1px] rounded-lg bg-gradient-to-r from-gray-700 to-gray-800">
-                                    <Link
-                                        href="/contact"
-                                        className="block px-8 py-4 bg-[#1a1a1a] rounded-lg text-lg font-medium hover:bg-[#222] transition-colors"
-                                    >
-                                        Contact us
-                                    </Link>
+                            <div className="flex items-center gap-6">
+                                <div className="inline-block">
+                                    <div className="p-[1px] rounded-lg bg-gradient-to-r from-gray-700 to-gray-800">
+                                        <Link
+                                            href="/contact"
+                                            className="block px-8 py-4 bg-[#1a1a1a] rounded-lg text-lg font-medium hover:bg-[#222] transition-colors"
+                                        >
+                                            Contact us
+                                        </Link>
+                                    </div>
+                                </div>
+                                {/* Mobile Image */}
+                                <div className="block lg:hidden w-24 h-24 pointer-events-none opacity-80 mix-blend-screen transform translate-y-2">
+                                     <img src="/footer.webp" alt="Abstract Footer Graphic" className="w-full h-full object-contain" />
                                 </div>
                             </div>
                         </div>
@@ -63,7 +69,7 @@ export function Footer() {
                     {/* Right Side: Navigation & Image */}
                     <div className="relative">
                         {/* Center Image (Floating 3D Effect) */}
-                        <div className="absolute top-[80%] left-0 transform -translate-y-1/2 -translate-x-[10%] w-[80%] h-auto -z-10 pointer-events-none opacity-80 mix-blend-screen">
+                        <div className="hidden lg:block absolute top-[80%] left-0 transform -translate-y-1/2 -translate-x-[10%] w-[80%] h-auto -z-10 pointer-events-none opacity-80 mix-blend-screen">
                             <img src="/footer.webp" alt="Abstract Footer Graphic" className="w-full h-full object-contain" />
                         </div>
 
