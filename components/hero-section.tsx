@@ -72,7 +72,7 @@ export function HeroSection() {
       />
 
       {/* 3D Abstract Background */}
-      <div className="absolute -right-[20%] top-[50%] -translate-y-1/2 h-[100%] w-[65%] pointer-events-none z-0">
+      <div className="absolute -right-[20%] top-[60%] -translate-y-1/2 h-[100%] w-[65%] pointer-events-none z-0">
         <img
           src="/6860afbc21b70f57410cb115_bf8c2b6ca2de36bd04ec0497a327b8b7_Watermark.avif"
           alt="Background Abstract"
@@ -97,7 +97,7 @@ export function HeroSection() {
 
 
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[5.5rem] leading-[1.1] lg:leading-[1.05] font-semibold text-[#1a1a1a] tracking-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-[6rem] leading-[1.1] lg:leading-[1.05] font-semibold text-[#1a1a1a] tracking-tight">
             Strategic Digital <br className="hidden sm:block" /> Partner
           </h1>
 
